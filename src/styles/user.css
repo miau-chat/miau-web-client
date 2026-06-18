@@ -1,0 +1,13 @@
+.user-section {
+	background: lightgoldenrodyellow;
+	flex: 0.1;
+}
+
+.user-ref::before {
+	content: "@";
+}
+.user-ref {
+	color: green;
+	cursor: pointer;
+	text-wrap-mode: nowrap;
+}

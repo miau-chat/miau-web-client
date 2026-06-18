@@ -1,0 +1,24 @@
+.message-section {
+	flex: 1;
+	background: lightsalmon;
+	justify-content: space-between;
+}
+
+.message {
+	color: black;
+	display: flex;
+	flex-direction: row;
+	gap: 0.25rem;
+}
+
+.message-username {
+	color: blue;
+}
+
+.message-username::before {
+	content: "[";
+}
+
+.message-username::after {
+	content: "]";
+}

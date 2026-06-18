@@ -1,0 +1,10 @@
+.channel-section {
+	background: lightblue;
+	flex: 0.1;
+}
+
+
+.channel-item {
+	cursor: pointer;
+	text-decoration: wavy;
+}

@@ -1,0 +1,17 @@
+{
+	"name": "miau-web-client",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "vite"
+	},
+	"author": "orago",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@orago/dom": "^0.0.50",
+		"@orago/lib": "^0.0.46",
+		"vite": "^8.0.16"
+	}
+}

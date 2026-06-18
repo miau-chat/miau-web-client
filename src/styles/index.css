@@ -1,0 +1,84 @@
+@import "./user.css";
+@import "./channel.css";
+@import "./chat.css";
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	transition: color 0.2s;
+	outline: none;
+	-webkit-touch-callout: none;
+	touch-action: manipulation;
+
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: 100%;
+}
+
+html,
+body,
+canvas {
+	user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+}
+
+body {
+	background: rgb(212, 198, 159);
+	height: 100%;
+	margin: 0px;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: row;
+	gap: 0.25rem;
+	width: 100%;
+	height: 100%;
+}
+
+.section {
+	padding: 0.25rem;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.section hr {
+	width: 100%;
+	border-style: solid;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	overflow: auto;
+}
+
+ul.list {
+	padding-inline: 1em;
+	margin-block: 0px;
+}
+
+@media screen and (width <= 600px) {
+	.main-container {
+		flex-direction: column;
+	}
+	.user-list {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.channel-list {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
